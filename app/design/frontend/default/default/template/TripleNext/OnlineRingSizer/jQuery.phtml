@@ -1,0 +1,6 @@
+<?php $includejQuery = (Mage::getStoreConfig('FMRS_section/FMRS_group/include_jquery'))//include jQuery in admin panel?>
+
+<!-- include jQuery if need -->
+<?php if ($includejQuery): ?> 
+	<script type="text/javascript">document.write(unescape("%3Cscript type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'%3E%3C/script%3E %3Cscript type='text/javascript'%3EjQuery.noConflict();%3C/script%3E"));</script>
+<?php endif; ?>

@@ -1,0 +1,33 @@
+
+<?php $_product = Mage::registry('current_product') ?>
+
+<?php $curProductCategoryIds = $_product->getCategoryIds() ?>
+
+<?php $selectedCategoryIds = (Mage::getStoreConfig('FMRS_section/FMRS_group/category'))//Ids of selected category in System->Configuration?><?php $selCategoryIds = explode(",", $selectedCategoryIds); ?>
+
+<?php foreach($curProductCategoryIds as $curProductCategoryId) {?>
+
+<?php foreach($selCategoryIds as $selCategoryId) {?>
+
+<?php if ($curProductCategoryId == $selCategoryId): ?>
+<!--this is your pop-up ring sizer magic : put this on the bottom of your page before your <\body> tag -->
+<!--FMRS-POPUP:BEGIN -->
+
+
+<script type='text/javascript'>
+    var host = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cscript src='" + host + "findmyringsize.com/Shared/Embed/fmrs-1.0.js' type='text/javascript'%3E%3C/script%3E"));	
+</script>
+
+<script>
+    var ringsizer = new FMRS();
+    ringsizer.initialize({
+        'client': 'sizer',
+        'mode': 'overlay',
+        'overlaySettings': { boxTheme: 'facebook', shadowOverlay: true }
+    });
+    ringsizer.bind();
+</script>
+
+<!--FMRS-POPUP:END-->
+
+<?php break;endif; ?><?php }?><?php }?>

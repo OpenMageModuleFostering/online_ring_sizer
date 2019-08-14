@@ -1,0 +1,52 @@
+<config>
+    <tabs>
+        <sizerconfig module="onlineringsizer">>
+            <label>Online Ring Sizer</label>
+            <sort_order>100000</sort_order>
+        </sizerconfig>
+    </tabs>
+    <sections>
+        <FMRS_section translate="label">
+            <label>Settings</label>
+            <tab>sizerconfig</tab>
+            <frontend_type></frontend_type>
+            <sort_order>910</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <FMRS_group translate="label">
+                    <label>Online Ring Sizer Group</label>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<category>
+							<label>Active Categories (Categories where Ring Sizer button will be visible)</label>
+							<frontend_type>multiselect</frontend_type>
+							<!-- adding a source model-->    
+							<source_model>TripleNext_OnlineRingSizer_Model_Categories</source_model>                        
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>                    
+						</category> 
+                    </fields>
+					<fields>
+						<include_jquery>
+							<label>Include jQuery</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                        
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>     
+							<comment><![CDATA[Include jQuery 1.7. Set this to NO if you are already using jQuery in your webshop. ]]></comment>
+						</include_jquery> 
+                    </fields>
+                </FMRS_group>
+            </groups>
+        </FMRS_section>		
+    </sections>
+</config>

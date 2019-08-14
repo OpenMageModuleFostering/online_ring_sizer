@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Online_Ring_Sizer</name>
+    <version>1.0.0.4</version>
+    <stability>stable</stability>
+    <license uri="http://findmyringsize.com/en/Info/TermsAndConditions.aspx&amp;quot;">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>A simple on display ring sizer widget that let your customers find their ring size online</summary>
+    <description>FindMyRingSize is a unique On Display Ring Sizer. Our unique technology offers a simple, reliable and highly accurate solution for online jewelry customers to find their ring size. It's an intuitive process, which takes less than a minute.</description>
+    <notes>User can select categories and include jquery  in admin panel for viewing button.</notes>
+    <authors><author><name>TripleNext</name><user>triplenext</user><email>ev@triplenext.com</email></author></authors>
+    <date>2013-11-07</date>
+    <time>22:23:01</time>
+    <contents><target name="magecommunity"><dir name="TripleNext"><dir name="OnlineRingSizer"><dir name="etc"><file name="config.xml" hash="f6fe1cd66d827733c0138ebd3365ae9a"/><file name="system.xml" hash="9b1d3a93cd5794805e1ba4ce2601ee19"/><file name="adminhtml.xml" hash="0cb1782b17bb76f9dc985a13293d0c7a"/></dir><dir name="Helper"><file name="Data.php" hash="a40e9f10f180b266efcae390590f3b76"/></dir><dir name="Model"><file name="Categories.php" hash="9c06b0a6d8a51ab9a0d026c8541b66d6"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="TripleNext_OnlineRingSizer.xml" hash="b421e9c14e473a46a10968ea6e176412"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="TripleNext"><dir name="OnlineRingSizer"><file name="button.phtml" hash="859b3b1334b7809e29a067b5d5615f1b"/><file name="js.phtml" hash="9da9e6458f066a0f7c9d6cf1118a7faa"/><file name="jQuery.phtml" hash="beea50a90990e7e5336903ec4865639a"/></dir></dir></dir><dir name="layout"><dir name="TripleNext"><dir name="OnlineRingSizer"><file name="FMRSmod.xml" hash="004a479512d9a877467404a25b932915"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

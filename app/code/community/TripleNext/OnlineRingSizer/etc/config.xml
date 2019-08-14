@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TripleNext_OnlineRingSizer>
+            <version>1.0.0.1</version>
+        </TripleNext_OnlineRingSizer>
+    </modules>
+	<global>    
+		<helpers>
+			<onlineringsizer>
+				<class>TripleNext_OnlineRingSizer_Helper</class>
+			</onlineringsizer>
+		</helpers>  
+		<models>
+            <!-- ... -->
+            <onlineringsizer>
+                <class>TripleNext_OnlineRingSizer_Model</class>
+            </onlineringsizer>   
+            <!-- ... -->
+        </models>
+	</global>
+	<default>
+		<FMRS_section>
+			<FMRS_group>
+				<include_jquery>1</include_jquery>	
+			</FMRS_group>
+		</FMRS_section>
+	</default>
+    <frontend>
+        <layout>
+            <updates>
+                <TripleNext_OnlineRingSizer>
+                    <file>TripleNext/OnlineRingSizer/FMRSmod.xml</file>
+                </TripleNext_OnlineRingSizer>
+            </updates>
+        </layout>        
+    </frontend>
+	<adminhtml>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <FMRS_section>
+                                        <title>FMRS Section</title>
+                                    </FMRS_section>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+	</adminhtml>
+	
+</config>

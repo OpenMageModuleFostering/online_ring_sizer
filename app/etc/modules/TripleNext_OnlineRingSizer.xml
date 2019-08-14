@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TripleNext_OnlineRingSizer>
+            <active>true</active>
+            <codePool>community</codePool>
+        </TripleNext_OnlineRingSizer>
+    </modules>
+</config>
